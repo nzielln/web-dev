@@ -75,9 +75,9 @@ Links
 .wd-links ul {
     display: flex;
     width: 100%;
-    margin: 0px;
+    margin: 0;
     list-style: none;
-    padding: 0px;
+    padding: 0;
     justify-content: space-between;
     border-bottom: 2px solid rgb(47, 51, 54);
 
@@ -85,10 +85,8 @@ Links
 
 .wd-links ul li {
     font-size: 15px;
-    padding: 16px;
-    padding-bottom: 0px;
+    padding: 16px 16px 0;
     font-weight: bold;
-    color: rgb(110, 118, 125);
 
 }
 
@@ -116,7 +114,7 @@ Links
     width: 100%;
     height: 12px;
     background-color: rgb(19, 21, 25);
-    margin: 0px;
+    margin: 0;
 }
 
 .wd-bottom {
@@ -211,14 +209,14 @@ h4, h2, h3, p {
 }
 
 .wd-bookmark-header-inner #wd-bookmark-heading {
-    padding: 0px;
+    padding: 0;
     font-weight: bold;
     font-size: 20px;
 
 }
 
 .wd-bookmark-header-inner p {
-    padding: 0px;
+    padding: 0;
     font-size: 13px;
     color: rgb(110, 118, 125);
 
