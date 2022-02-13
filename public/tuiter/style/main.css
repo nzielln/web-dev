@@ -2,6 +2,7 @@
 body {
     background-color: black;
     color: white;
+    margin: 0 12px;
     font-family: "Helvetica Neue", sans-serif;
 }
 
@@ -10,18 +11,21 @@ body {
 }
 
 /* Explore */
-
-/*
-Search Bar
- */
+.wd-content {
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+}
+/* Search Bar */
 .wd-explore-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 16px;
+    padding-top: 12px
 }
 
 .wd-search {
-    width: 90%;
+    width: 95%;
     height: 35px;
     display: flex;
     align-items: center;
@@ -29,7 +33,6 @@ Search Bar
 
     border: 0 solid transparent;
     border-radius: 20px;
-
 }
 
 .wd-search button .glass {
@@ -37,7 +40,7 @@ Search Bar
     color: rgb(110, 117, 125);
 }
 
-#search-bar {
+.wd-search-bar {
     background: transparent;
     border: 0 solid transparent;
     width: 90%;
@@ -47,7 +50,7 @@ Search Bar
     font-family: "Helvetica Neue", sans-serif;
 }
 
-#search-bar::placeholder {
+.wd-search-bar::placeholder {
     color: rgb(110, 117, 125);
 }
 
@@ -59,66 +62,65 @@ Search Bar
 
 .wd-explore-top .gear {
     font-size: 20px;
-    padding-right: 12px;
-    color: rgb(20, 161, 242);
+    padding: 0 12px;
+    margin: 0;
+    color: rgb(29, 161, 242);
 }
 
-/*
-Links
- */
-
+/* Links */
 .wd-links {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .wd-links ul {
     display: flex;
     width: 100%;
-    margin: 0;
     list-style: none;
     padding: 0;
+    margin: 10px;
     justify-content: space-between;
-    border-bottom: 2px solid rgb(47, 51, 54);
-
+    border-bottom: 1px solid rgb(47, 51, 54);
 }
 
 .wd-links ul li {
     font-size: 15px;
-    padding: 16px 16px 0;
     font-weight: bold;
-
+    padding: 16px;
+    color: rgb(110, 118, 125)
 }
 
-#active {
-    color: rgb(20, 161, 242);
-    padding-left: 0;
-
+.wd-active {
+    color: rgb(29, 161, 242);
+    padding: 16px 0;
+    margin: 0 16px;
+    border-bottom: 3px solid rgb(29, 161, 242);
 }
 
+/*
 #active::after {
     content: "";
     float: left;
-    background-color: rgb(20, 161, 242);
+    background-color: rgb(29, 161, 242);
     width: 100%;
     height: 3px;
     margin-top: 16px;
     border-radius: 3px;
-}
-
-#last {
-    padding-right: 0;
-}
+}*/
 
 .wd-seperator {
     width: 100%;
     height: 12px;
     background-color: rgb(19, 21, 25);
+    border-top: 2px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
     margin: 0;
 }
 
 .wd-bottom {
-
+    padding-bottom: 16px;
 }
 
 h4, h2, h3, p {
@@ -132,10 +134,8 @@ h4, h2, h3, p {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    border: 1px solid rgb(47, 51, 54);
-
-    padding: 15px;
-
+    border-bottom: 1px solid rgb(47, 51, 54);
+    padding: 16px;
 }
 
 .wd-trend-box i {
@@ -148,7 +148,7 @@ h4, h2, h3, p {
     font-weight: lighter;
     flex-direction: column;
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
 }
 
 .wd-no-count {
@@ -158,9 +158,12 @@ h4, h2, h3, p {
 .wd-trend-title, .trend-day {
     font-size: 13px;
     font-weight: normal;
-    padding-bottom: 10px;
+    padding: 0;
     color: rgb(110, 118, 125);
+}
 
+.wd-trend-title {
+    padding-bottom: 5px;
 }
 
 .wd-heading {
@@ -168,7 +171,6 @@ h4, h2, h3, p {
     padding-bottom: 10px;
     font-weight: bold;
     color: white;
-
 }
 
 .wd-tuit-count {
@@ -180,15 +182,24 @@ h4, h2, h3, p {
 .wd-trend-title-bold {
     font-size: 13px;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     color: white;
+    display: flex;
+    align-items: center;
+}
+
+.wd-trend-title-bold .wd-title-img {
+    height: 15px;
+    width: 15px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
 .wd-trend-title-bold .fa-circle-check {
     color: white;
     padding-left: 5px;
     padding-right: 5px;
-
 }
 
 .wd-trend-box img {
@@ -198,40 +209,38 @@ h4, h2, h3, p {
     border-radius: 15px;
 }
 
-
 /* Bookmarks */
 .wd-bookmark-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid rgb(110, 118, 125);
+    padding: 12px 16px;
+    border-bottom: 1px solid rgb(47, 51, 54);
 }
 
-.wd-bookmark-header-inner #wd-bookmark-heading {
+.wd-bookmark-header-inner .wd-bookmark-heading {
     padding: 0;
     font-weight: bold;
     font-size: 20px;
-
 }
 
 .wd-bookmark-header-inner p {
     padding: 0;
     font-size: 13px;
     color: rgb(110, 118, 125);
-
 }
 
-#blue-elip {
+.wd-bookmark-header .wd-blue-elip {
     display: flex;
     align-items: center;
-    color: rgb(20, 161, 242);
+    color: rgb(29, 161, 242);
 }
 
 .wd-bookmark {
     display: flex;
     align-items: flex-start;
-
+    padding: 12px 16px;
+    border-bottom: 1px solid rgb(47, 51, 54);
 }
 
 .wd-bookmark-main {
@@ -241,21 +250,22 @@ h4, h2, h3, p {
 
 .wd-bookmark-text {
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 16px;
 }
 
 .wd-bookmark-text div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-right: 16px;
 }
-
 
 .wd-bookmark-author {
     padding-bottom: 5px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .wd-handler {
@@ -263,8 +273,8 @@ h4, h2, h3, p {
     color: rgb(110, 118, 125);
 }
 
-#wd-gray-elip {
-    color: rgb(110, 118, 125);
+.fa-ellipsis-h {
+    color: rgb(47, 51, 54);
 }
 
 .wd-bookmark .wd-bookmark-profile {
@@ -272,9 +282,10 @@ h4, h2, h3, p {
     height: 48px;
     object-fit: cover;
     border-radius: 50%;
-    padding: 20px;
 }
+
 .wd-bookmark-paragraph {
+    max-width: 506px;
     font-size: 15px;
     font-weight: normal;
     color: white;
@@ -283,52 +294,61 @@ h4, h2, h3, p {
 }
 
 .wd-bookmark-img {
-    width: 100%;
-    border: 1px solid rgb(110, 118, 125);
-    border-radius: 20px;
+    max-width: 504px;
+    border: 1px solid rgb(47, 51, 54);
+    border-radius: 15px;
+    margin-left: 12px;
 }
 
 .wd-bookmark-img p {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding: 0 12px 12px 12px;
     line-height: 1.5;
     color: rgb(110, 118, 125);
 }
 
+.wd-link {
+    display: block;
+    font-size: 15px;
+}
+
 .wd-bookmark-img .wd-title {
     color: white;
+    font-weight: bold;
+    padding-top: 12px;
     padding-bottom: 0;
-    padding-top: 15px;
 }
 
 .wd-bookmark-img img {
     height: 264px;
-    width: 100%;
+    width: 504px;
     object-fit: cover;
-    border-radius: 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .wd-stats {
-    width: 100%;
+    width: 504px;
     display: flex;
-    padding-top: 20px;
-    justify-content: space-between;
+    padding: 0;
+    margin-top: 12px;
+    margin-left: 12px;
 }
 
-.wd-stats span i {
+.wd-stats a i {
     color: rgb(110, 118, 125);
     font-size: 15px;
+    padding-right: 12px;
 }
 
-.wd-stats span {
+.wd-stats a {
+    text-decoration: none;
     width: 40px;
     color: rgb(110, 118, 125);
     font-weight: normal;
     font-size: 13px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin-right: auto;
 }
 
 .wd-stats .wd-pink {
