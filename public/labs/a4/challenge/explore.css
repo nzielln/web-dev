@@ -215,7 +215,10 @@ div.card {
 .wd-username span {
     font-weight: normal;
 }
-
+.wd-overlay-text span {
+    font-size: 13px;
+    font-weight: normal;
+}
 .card-img-overlay h4 {
     font-size:25px;
 }
