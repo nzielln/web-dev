@@ -5,11 +5,11 @@ body {
 }
 
 /*Side Navigation*/
-.wd-side-nav i {
+.wd-side i {
     font-size: 12px;
 }
 
-.wd-side-nav li {
+.wd-side a {
     font-family: "Helvetica Neue", sans-serif;
     font-size: 14px;
 }

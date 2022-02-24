@@ -1,0 +1,224 @@
+
+html {
+    background-color: black;
+}
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: black;
+
+}
+
+.container-fluid {
+    background-color: black;
+}
+/*Side Navigation*/
+.wd-side {
+    background-color: inherit;
+}
+.wd-side i {
+    font-size: 14px;
+}
+
+.list-group-item.list-group-item-action.active {
+   color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.wd-side a {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    background-color: inherit;
+    color: rgba(255,255,255,.65);
+}
+
+span.wd-stack {
+    width: 16px;
+}
+
+.wd-stack i {
+    width: 16px;
+    height: 16px;
+}
+
+.wd-side .btn {
+    border-radius: 25px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+
+.wd-main {
+    border: 1px solid gray;
+    border-top: none;
+
+}
+.fa-magnifying-glass {
+    font-size: 12px;
+    color: rgb(110, 115,120);
+}
+
+.wd-search-bar {
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: rgb(20, 24, 28);
+}
+
+.wd-search-bar input {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: rgb(110, 115,120);
+    background-color: transparent;
+}
+
+.wd-top-bar a i {
+    font-size: 22px;
+    color: white;
+}
+.nav.nav-tabs {
+    border: none;
+}
+.nav-tabs li a {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: rgb(110, 115,120);
+    font-weight: bold;
+}
+.nav.nav-tabs li .active {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 4px solid rgb(24, 164, 230);
+}
+.wd-card-heading, .wd-tuit-count {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    color: gray;
+    font-weight: normal;
+}
+
+.wd-trend-title {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wd-trend-title span {
+    font-weight: normal;
+    color: gray;
+}
+
+.wd-trend-blurb {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-card-heading img {
+    height: 16px;
+    width: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.wd-verified {
+    color: white;
+}
+
+.wd-verified span {
+    color: white;
+    color: gray;
+}
+
+.wd-card-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+/*Who to follow*/
+div.card {
+    border: none;
+}
+.card-img-overlay {
+    border-bottom: 1px solid rgb(110, 115,120);
+    border-top: 1px solid rgb(110, 115,120);
+    border-radius: 0;
+}
+.card .position-relative {
+    border: none;
+}
+.card .list-group li  {
+    background-color: black;
+}
+.wd-follow-header, .wd-username {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wd-follow-user-card img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.wd-follow-card button {
+    border-radius: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: none
+}
+.wd-side-follow ul li {
+    background-color: rgb(20, 24, 28);
+    border: none;
+}
+
+.wd-side-follow ul {
+    border-radius: 15px;
+    color: gray;
+}
+
+.wd-side-follow .wd-disclaimer p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wd-follow-header h6 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-handler {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    color: rgb(110, 115,120);
+
+}
+
+.wd-username i {
+    color: white;
+}
+
+.wd-username {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+.wd-username span {
+    font-weight: normal;
+}
+
+.card-img-overlay h4 {
+    font-size:25px;
+}
+
+
+
