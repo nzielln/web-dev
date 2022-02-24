@@ -45,6 +45,7 @@ span.wd-stack {
     border-radius: 25px;
     font-family: "Helvetica Neue", sans-serif;
     font-size: 14px;
+    background-color: rgb(24, 164, 230);
 }
 
 .wd-main {
@@ -87,7 +88,7 @@ span.wd-stack {
     background-color: transparent;
     color: white;
     border: none;
-    border-bottom: 4px solid rgb(24, 164, 230);
+    border-bottom: 4px solid rgb(0, 157, 244);
 }
 .wd-card-heading, .wd-tuit-count {
     font-family: "Helvetica Neue", sans-serif;
@@ -119,7 +120,6 @@ span.wd-stack {
     width: 16px;
     object-fit: cover;
     border-radius: 50%;
-    margin-right: 5px;
 }
 .wd-verified {
     color: white;
