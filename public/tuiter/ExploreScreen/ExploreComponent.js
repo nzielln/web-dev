@@ -1,5 +1,5 @@
-import SearchBar from "../SearchNavBar/SearchBar.js";
-import PostSummaryList from "../PostSummaryList/index.js";
+import SearchBar from "./SearchNavBar/SearchBar.js";
+import PostSummaryList from "./PostSummaryList/index.js";
 
 const ExploreComponent = () => {
     return (`

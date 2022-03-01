@@ -12,10 +12,10 @@ const PostSummaryList = () => {
             </div>
         <ul class="list-group list-group-flush pt-2" style="border: 1px solid transparent; border-radius: 3px;">
             ${
-                posts.map(p => {
-                    return (PostSummaryItem(p));
-                }).join("")
-            }
+        posts.map(p => {
+            return (PostSummaryItem(p));
+        }).join("")
+    }
         </ul>
         </div>
     `);
