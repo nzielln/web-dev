@@ -1,10 +1,6 @@
-
 body {
-    font-family: "Helvetica Neue", sans-serif;
-    padding: 10px;
+    color: white;
 }
-
-/*Side Navigation*/
 .wd-side i {
     font-size: 12px;
 }
@@ -29,14 +25,8 @@ span.wd-stack {
     font-size: 14px;
 }
 
-/*Search and Nav Bar*/
 .fa-magnifying-glass {
     font-size: 12px;
-}
-
-.wd-search-bar {
-    border: 1px solid lightgray;
-    border-radius: 25px;
 }
 
 .wd-search-bar input {
@@ -54,6 +44,54 @@ ul.nav-tabs {
     font-family: "Helvetica Neue", sans-serif;
     font-size: 14px;
 }
+
+.wd-search-bar {
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.wd-search-bar input {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: gray;
+    background-color: transparent;
+}
+
+.wd-follow-header, .wd-username {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wd-follow-user-card img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.wd-follow-header h6 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 15px;
+}
+
+.wd-handler {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 13px;
+}
+
+.wd-username {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wd-follow-card button {
+    border-radius: 20px;
+}
+
+
 
 .wd-card-heading, .wd-tuit-count {
     font-family: "Helvetica Neue", sans-serif;
@@ -85,40 +123,3 @@ ul.nav-tabs {
     object-fit: cover;
     border-radius: 8px;
 }
-
-/*Who to follow*/
-
-.wd-follow-header, .wd-username {
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-
-
-.wd-follow-card button {
-    border-radius: 20px;
-}
-
-.wd-follow-header h6 {
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 15px;
-}
-
-.wd-handler {
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 13px;
-}
-
-.wd-username {
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.card-img-overlay h4 {
-    font-size:32px;
-}
-
-
-
