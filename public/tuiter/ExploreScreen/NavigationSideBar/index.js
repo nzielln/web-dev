@@ -1,11 +1,11 @@
 import items from "./items.js";
 import NavIcon from "./NavIcon.js";
 
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
     return (`
         ${
             items.map(i => {
-                return(NavIcon(i))
+                return(NavIcon(i, active))
             }).join("")
         }   
         <a href="more.html" class="list-group-item list-group-item-action wd-stack-icon">
