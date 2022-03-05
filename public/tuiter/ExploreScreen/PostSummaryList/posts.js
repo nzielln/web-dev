@@ -21,7 +21,7 @@ export default [
         time: "Last Week",
         title: "",
         img: "../images/jq.png",
-        tuits: "123K Tuits",
+        tuits: "",
     },
     {
         topic: "Web Development",
@@ -29,6 +29,6 @@ export default [
         time: "Last Month",
         title: "",
         img: "../images/node.jpeg",
-        tuits: "120K Tuits",
+        tuits: "",
     },
 ];

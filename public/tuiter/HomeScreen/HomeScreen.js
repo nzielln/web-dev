@@ -9,7 +9,7 @@ import PostList from "./index.js";
                 ${NavigationSidebar("Home")} 
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10 wd-main">
-             ${PostList()} 
+                ${PostList()} 
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block wd-side-follow">
                 ${PostSummaryList()} 
