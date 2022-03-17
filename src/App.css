@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.wd-side i {
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wd-side a {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+span.wd-stack {
+  width: 16px;
+}
+
+.wd-stack i {
+  width: 16px;
+  height: 16px;
+}
+
+.wd-side .btn {
+  border-radius: 25px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+.fa-magnifying-glass {
+  font-size: 12px;
+  color: gray;
+}
+
+.wd-search-bar input {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: gray;
+  background-color: transparent;
+}
+
+.wd-top-bar a i {
+  font-size: 22px;
+}
+
+ul.nav-tabs {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+.wd-search-bar {
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.wd-search-bar input {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: gray;
+  background-color: transparent;
+}
+
+.wd-follow-header, .wd-username {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wd-follow-user-card img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wd-follow-header h6 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+}
+
+.wd-handler {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+}
+
+.wd-username {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wd-follow-card button {
+  border-radius: 20px;
+}
+
+
+
+.wd-card-heading, .wd-tuit-count {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  color: gray;
+  font-weight: normal;
+}
+
+.wd-trend-title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wd-trend-title span {
+  font-weight: normal;
+  color: gray;
+}
+
+.wd-trend-blurb {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wd-card-img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 8px;
 }

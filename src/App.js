@@ -13,7 +13,7 @@ import Tuiter from "./components/tuiter";
 function App() {
   return (
       <Router>
-          <div className="container-fluid">
+          <div className="container-fluid pt-3">
              <Routes>
                  <Route path="/hello"
                         exact={true}

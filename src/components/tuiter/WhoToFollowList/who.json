@@ -1,0 +1,27 @@
+[
+    {
+        "avatarIcon": "/tuiter/images/java.png",
+        "userName": "Java",
+        "handler": "Java"
+    },
+    {
+        "avatarIcon": "/tuiter/images/rel.jpeg",
+        "userName": "Relativity Space",
+        "handler": "relativityspace"
+    },
+    {
+        "avatarIcon": "/tuiter/images/vg.png",
+        "userName": "Virgin Galactic",
+        "handler": "virgingalactic"
+    },
+    {
+        "avatarIcon": "/tuiter/images/nasa.png",
+        "userName": "NASA",
+        "handler": "NASA"
+    },
+    {
+        "avatarIcon": "/tuiter/images/tes.png",
+        "userName": "Tesla",
+        "handler": "Tesla"
+    }
+]

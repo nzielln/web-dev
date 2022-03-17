@@ -1,12 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import ExploreScreen from "./ExplorerScreen/ExploreScreen";
+import HomeScreen from "./HomeScreen/HomeScreen";
 
 function Tuiter() {
     return (
-        <>
-            <h1>Tuiter</h1>
-            <Link to="/hello">Hello</Link> | <Link to="/">Labs</Link>
-        </>
+        <HomeScreen/>
+
     );
 }
 

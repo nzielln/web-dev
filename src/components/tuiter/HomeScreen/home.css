@@ -1,0 +1,140 @@
+body {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.wd-post-list li, .card, .card-body {
+    background-color: rgb(6,6,6);
+}
+
+.wd-side i {
+    font-size: 12px;
+}
+
+.wd-side a {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+
+span.wd-stack {
+    width: 16px;
+}
+
+.wd-stack i {
+    width: 16px;
+    height: 16px;
+}
+
+.wd-side .btn {
+    border-radius: 25px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+
+.wd-card-heading, .wd-tuit-count {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    color: gray;
+    font-weight: normal;
+}
+
+.wd-trend-title {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wd-trend-title span {
+    font-weight: normal;
+    color: gray;
+}
+
+.wd-trend-blurb {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wd-card-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.fa-magnifying-glass {
+    font-size: 12px;
+}
+
+.wd-search-bar input {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: gray;
+    background-color: transparent;
+}
+
+.wd-top-bar a i {
+    font-size: 22px;
+}
+
+ul.nav-tabs {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+
+.wd-search-bar {
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.wd-search-bar input {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: gray;
+    background-color: transparent;
+}
+
+.wd-bookmark-author {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wd-handler {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    color: rgb(110, 118, 125);
+}
+
+.wd-bookmark-paragraph {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 15px;
+}
+
+.wd-title {
+    color: white;
+    font-size: 15px;
+}
+
+.card-body {
+    color: #8d8d8d;
+}
+
+.wd-stats a i {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+}
+
+.wd-stats a {
+    text-decoration: none;
+    width: 40px;
+    color: rgb(110, 118, 125);
+    font-weight: normal;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.wd-main {
+    border-radius: 25px;
+}
