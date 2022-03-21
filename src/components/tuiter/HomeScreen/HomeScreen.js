@@ -1,7 +1,7 @@
 import React from "react";
 import NavigationSideBar from "../NavigationSideBar";
-import PostSummaryList from "../PostSummaryList";
 import PostList from "./index";
+import CardBottom from "../PostSummaryList/CardBottom";
 
 const HomeScreen = () => {
     return (
@@ -13,7 +13,7 @@ const HomeScreen = () => {
                 <PostList/>
             </div>
             <div className="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block wd-side-follow">
-                <PostSummaryList/>
+                <CardBottom/>
             </div>
         </div>
     );

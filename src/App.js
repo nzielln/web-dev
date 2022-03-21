@@ -6,9 +6,11 @@ import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
 
 //Components
 import './App.css';
-import HelloWorld from "./components/hello-world";
+import HelloWorld from "./components/labs/hello-world";
 import Labs from "./components/labs";
-import Tuiter from "./components/tuiter";
+import Tuiter from "./components/labs/index";
+import HomeScreen from "./components/tuiter/HomeScreen/HomeScreen";
+import ExploreScreen from "./components/tuiter/ExplorerScreen/ExploreScreen";
 
 function App() {
   return (
@@ -18,14 +20,20 @@ function App() {
                  <Route path="/hello"
                         exact={true}
                         element={<HelloWorld/>}/>
+                 <Route path="/tuiter"
+                        exact={true}
+                        element={<Tuiter/>}/>
 
                  {/*Declare default path using path="/"*/}
                  <Route path="/"
                         exact={true}
                         element={<Labs/>}/>
-                 <Route path="/tuiter"
+                 <Route path="/tuiter/explore"
                         exact={true}
-                        element={<Tuiter/>}/>
+                        element={<ExploreScreen/>}/>
+                 <Route path="/tuiter/home"
+                        exact={true}
+                        element={<HomeScreen/>}/>
             </Routes>
           </div>
       </Router>
