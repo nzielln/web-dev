@@ -7,8 +7,8 @@ import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
 //Components
 import './App.css';
 import HelloWorld from "./components/labs/hello-world";
-import Labs from "./components/labs";
-import Tuiter from "./components/labs/index";
+import Labs from "./components/labs/labs";
+import Tuiter from "./components/tuiter/tuiter";
 import HomeScreen from "./components/tuiter/HomeScreen/HomeScreen";
 import ExploreScreen from "./components/tuiter/ExplorerScreen/ExploreScreen";
 
@@ -24,7 +24,6 @@ function App() {
                         exact={true}
                         element={<Tuiter/>}/>
 
-                 {/*Declare default path using path="/"*/}
                  <Route path="/"
                         exact={true}
                         element={<Labs/>}/>
