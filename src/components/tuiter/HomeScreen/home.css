@@ -120,12 +120,12 @@ ul.nav-tabs {
     color: #8d8d8d;
 }
 
-.wd-stats a i {
+.wd-stats span i {
     color: rgb(110, 118, 125);
     font-size: 15px;
 }
 
-.wd-stats a {
+.wd-stats span {
     text-decoration: none;
     width: 40px;
     color: rgb(110, 118, 125);

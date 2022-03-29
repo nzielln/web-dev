@@ -75,11 +75,14 @@ ul.nav-tabs {
 .wd-follow-header h6 {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 15px;
+  font-weight: bold;
+
 }
 
 .wd-handler {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 13px;
+
 }
 
 .wd-username {
@@ -123,4 +126,39 @@ ul.nav-tabs {
   height: 75px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.wd-text-icon {
+  color: rgb(29, 161, 242);
+  font-size: 22px;
+}
+
+
+/*PROFILE PAGE*/
+
+.wd-profile-username {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.wd-header-tuits, .wd-handler-profile {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: gray;
+}
+
+.wd-bio, .wd-profile-deets span, .wd-profile-stats {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+
+.wd-profile-deets span, .wd-profile-stats  {
+  color: gray;
+}
+
+.wd-profile-stats span {
+  color: white;
+  font-weight: bold;
 }
