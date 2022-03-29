@@ -162,3 +162,31 @@ ul.nav-tabs {
   color: white;
   font-weight: bold;
 }
+
+.wd-edit-button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: white;
+}
+
+.wd-fade {
+  filter: brightness(75%);
+}
+
+.wd-form input , .wd-form textarea{
+  background-color: transparent;
+  border: 1px solid grey;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+
+}
+
+.wd-form input:focus {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+
+}
