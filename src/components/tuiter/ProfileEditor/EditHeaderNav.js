@@ -21,7 +21,7 @@ const EditHeaderNav = () => {
             </div>
             <div className="position-relative">
                 <img src="/tuiter/images/tea.jpeg" className="pb-3 wd-header-image wd-fade" alt=""
-                     style={{"height": "250px", "width": "100%", "objectFit": "cover"}}/>
+                     style={{"height": "300px", "width": "100%", "objectFit": "cover"}}/>
                 <div className="position-absolute top-50 start-50 translate-middle">
                     <button className="wd-edit-button"><i className="fa-solid fa-camera"/></button>
                     <button className="wd-edit-button"><i className="fa-solid fa-xmark"/></button>

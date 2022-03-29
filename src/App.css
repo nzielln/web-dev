@@ -182,7 +182,7 @@ ul.nav-tabs {
 
 }
 
-.wd-form input:focus {
+.wd-form input:focus, .wd-form textarea:focus {
   background-color: transparent;
   border: 1px solid grey;
   color: white;

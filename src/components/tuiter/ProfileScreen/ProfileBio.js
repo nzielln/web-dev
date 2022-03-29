@@ -3,8 +3,8 @@ import {Link} from "react-router-dom";
 
 const ProfileBio = ({user}) => {
     return (
-        <div className="d-flex flex-column align-content-between wd-bio mt-3">
-            <div className="d-flex justify-content-end " style={{"width": "100%"}}>
+        <div className="d-flex flex-column align-content-between wd-bio mb-1">
+            <div className="d-flex justify-content-end " style={{"width": "100%", "zIndex": "50"}}>
                 <Link to="/tuiter/edit-profile">
                     <button className="p-1" style={{
                         "width": "120px", "backgroundColor": "transparent", "color": "white", "border": "1px" +

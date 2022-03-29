@@ -12,7 +12,7 @@ const HeaderNav = ({user}) => {
             </div>
 
         </div>
-            <img src="/tuiter/images/tea.jpeg" className="pb-3" alt="" style={{"height": "250px", "width": "100%", "objectFit": "cover"}}/>
+            <img src="/tuiter/images/tea.jpeg" className="pb-3" alt="" style={{"height": "300px", "width": "100%", "objectFit": "cover"}}/>
         </>
     );
 

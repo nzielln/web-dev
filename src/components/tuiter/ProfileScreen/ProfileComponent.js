@@ -10,9 +10,9 @@ const ProfileComponent = () => {
         <div className="position-relative">
             <ProfileHeader user={user}/>
             <ProfileBio user={user}/>
-            <img className="position-absolute top-50 start-0 translate-middle-y ms-4 mt-4"
+            <img className="position-absolute top-50 start-0 translate-middle-y ms-4 mt-5"
                  src="/tuiter/images/ell.JPG"
-                 style={{"width": "100px", "height": "100px", "borderRadius": "50%", "objectFit": "cover", "outline": "3px solid black"}}
+                 style={{"width": "100px", "height": "100px", "borderRadius": "50%", "objectFit": "cover", "outline": "3px solid black", "zIndex": "1"}}
                  alt=""/>
 
         </div>
