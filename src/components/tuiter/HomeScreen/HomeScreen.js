@@ -1,10 +1,25 @@
 import PostItem from "./PostItem.js";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import WhatsHappening from "./WhatsHappening";
+import * as service from "/tuit-service";
+import {useEffect} from "react";
+
 const HomeScreen = () => {
     const tuits = useSelector(
         state => state.tuits
     );
+
+    const dispatch = useDispatch();
+
+    const findAllTuits = async () => {
+        const tuits = await service.findAllTuits();
+        dispatch({
+            type: "FIND_ALL_TUITS",
+            tuits: tuits
+        });
+    };
+
+    useEffect(findAllTuits, []);
 
     return (
         <>

@@ -1,4 +1,6 @@
-import React from "react";
+import React , {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import * as service from "../../../../server/service/tuit-service.js";
 
 const PostSummaryItem = (param) => {
     return(
