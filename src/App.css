@@ -190,3 +190,14 @@ ul.nav-tabs {
   font-size: 14px;
 
 }
+
+.wd-link-nostyle {
+  text-decoration: none;
+  color: white;
+
+}
+.wd-link-nostyle:hover {
+  text-decoration: none;
+  color: white;
+
+}

@@ -1,128 +1,78 @@
-import React, {useState} from "react";
-import {useDispatch} from "react-redux";
+import React from "react";
 
-const ProfileBio = ({user}) => {
-    let [name, setName] = useState(user.first_name + " " + user.last_name);
-    let [location, setLocation] = useState(user.location);
-    let [bio, setBio] = useState(user.biography);
-    let [date, setDate] = useState(user.dob);
+const ProfileBio = (props) => {
+    let user = props.user;
+    let name = user.first_name + " " + user.last_name;
+    const changeHandler = props.changeHandler;
 
-    const dispatch = useDispatch();
-
-    const nameChangeHandler = (event) => {
-        const value = event.target.value;
-        setName(value);
-    }
-
-    const nameFocusHandler = (event) => {
-        setName("");
-    }
-
-    const locationChangeHandler = (event) => {
-        const value = event.target.value;
-        setLocation(value);
-    }
-
-    const locationFocusHandler = (event) => {
-        setLocation("");
-    }
-
-    const bioChangeHandler = (event) => {
-        const value = event.target.value;
-        setBio(value);
-    }
-
-    const bioFocusHandler = (event) => {
-        setBio("");
-    }
-
-    const dateChangeHandler = (event) => {
-        const value = event.target.value;
-        setDate(value);
-    }
-
-    const dateFocusHandler = (event) => {
-        setDate("");
-    }
-
-    const nameSubmitHandler = (event) => {
-        event.preventDefault();
-        dispatch({
-            type: "change-name", user: name
-        })
-      setName(name);
-    }
-
-    const locationSubmitHandler = (event) => {
-        event.preventDefault();
-        dispatch({
-            type: "change-location", location: location
-        })
-        setLocation(location);
-    }
-
-    const bioSubmitHandler = (event) => {
-        event.preventDefault();
-        dispatch({
-            type: "change-bio", bio: bio
-        })
-        setBio(bio);
-    }
-
-    const dateSubmitHandler = (event) => {
-        event.preventDefault();
-        dispatch({
-            type: "change-dob", date: date
-        })
-        setDate(date);
-    }
 
     return (
         <div className="d-flex flex-column align-content-between wd-bio">
 
-            <form className="form-floating wd-form mt-5 mb-2"
-                  onSubmit={nameSubmitHandler}
-            >
+            <form className="form-floating wd-form mt-5 mb-2">
                 <input type="text"
                        className="form-control" id="name"
                        value={name}
-                       onChange={nameChangeHandler}
-                       onFocus={nameFocusHandler}
+                       onChange={(event) => {
+                           const value = event.target.value.split(" ");
+                           let f_name, l_name;
+                           if (value.length > 1) {
+                               f_name = value[0];
+                               l_name = value[1];
+                           } else {
+                               f_name = value;
+                               l_name = "";
+                           }
 
+                           changeHandler({
+                               ...user,
+                               first_name: f_name,
+                               last_name: l_name
+                           });
+
+                       }}
                 />
                 <label htmlFor="name">Name</label>
             </form>
             <div className="d-flex justify-content-between mb-2">
-                <form className="form-floating wd-form" style={{"width": "48%"}}
-                      onSubmit={locationSubmitHandler}
-                >
+                <form className="form-floating wd-form" style={{"width": "48%"}}>
                     <input type="text" className="form-control" id="location"
-                           value={location}
-                           onChange={locationChangeHandler}
-                           onFocus={locationFocusHandler}
+                           value={user.location}
+                           onChange={(event) => {
+                               changeHandler({
+                                   ...user,
+                                   location: event.target.value
+                               });
+
+                           }}
                     />
                     <label htmlFor="location">Location</label>
                 </form>
 
-                <form className="form-floating wd-form" style={{"width": "48%"}}
-                      onSubmit={dateSubmitHandler}
-                >
+                <form className="form-floating wd-form" style={{"width": "48%"}}>
                     <input type="date" className="form-control" id="dob"
-                           value={date}
-                           onChange={dateChangeHandler}
-                           onFocus={dateFocusHandler}
-                    />
+                           value={user.dob}
+                           onChange={(event) => {
+                               changeHandler({
+                                   ...user,
+                                   dob: event.target.value
+                               });
+
+                           }}/>
                     <label htmlFor="dob">Name</label>
                 </form>
             </div>
 
             <form className="form-floating wd-form "
-                  onSubmit={bioSubmitHandler}
             >
                 <textarea className="form-control" id="bio" style={{"height": "80px"}}
-                          value={bio}
-                          onChange={bioChangeHandler}
-                          onFocus={bioFocusHandler}
+                          value={user.biography}
+                          onChange={(event) => {
+                              changeHandler({
+                                  ...user,
+                                  biography: event.target.value
+                              });
+                          }}
                 />
                 <label htmlFor="bio">Bio</label>
             </form>
