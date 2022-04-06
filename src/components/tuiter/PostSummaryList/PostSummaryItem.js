@@ -1,6 +1,4 @@
-import React , {useEffect} from "react";
-import {useDispatch, useSelector} from "react-redux";
-import * as service from "../../../../server/service/tuit-service.js";
+import React from "react";
 
 const PostSummaryItem = (param) => {
     return(
@@ -16,7 +14,7 @@ const PostSummaryItem = (param) => {
                     <p className="wd-tuit-count ps-1 mb-0">{param.post.tuits}</p>
                 </div>
             <img className="wd-card-img ms-4 pe-1"
-                 src={param.post.img}
+                 src={`/tuiter/images/${param.post.img}`}
                  style={{"width": "75px", "height": "75px", "objectFit": "cover", "borderRadius": "8px"}}
                  alt=""/>
             </div>

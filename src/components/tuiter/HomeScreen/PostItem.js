@@ -1,11 +1,14 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import PostStats from "./PostStats";
+import {deleteTuit} from "../actions/tuits-actions";
+
 
 const PostItem = ({tuit}) => {
     let media;
     const img = tuit.post.image;
     const vid = tuit.post.video;
+    const content = tuit.post.content[0]
 
     if (vid !== "") {
         media = <iframe width={vid.width}
@@ -17,7 +20,7 @@ const PostItem = ({tuit}) => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen/>;
     } else if (img !== "") {
-        media = <img src={tuit.post.image} className="card-img-top" alt="" style={{"borderRadius": "25px"}}/>;
+        media = <img src={`/tuiter/images/${tuit.post.image}`} className={`card-img-top ${content === "" ? "round" : ""}`} alt="" />;
 
     } else if (img === "" && vid === "") {
         media = "";
@@ -25,19 +28,11 @@ const PostItem = ({tuit}) => {
 
     const dispatch = useDispatch();
 
-    const xClickHandler = (tuit) => {
-        dispatch({
-            type: "delete-tuit",
-            tuit
-        })
-        // alert("Saqular blah! You're trying to delete me!");
-    }
-
     return(
-        <li className="list-group-item pt-2 pb-2 ps-2 pe-2" style={{"backgroundColor": "rgb(30,30,30)"}}>
+        <li className="list-group-item pt-2 pb-2 ps-2 pe-2">
             <div className="d-flex flex-co align-items-start justify-content-start">
                 <img
-                src={tuit.user.avatar}
+                src={`/tuiter/images/${tuit.user.avatar}`}
                 alt="" 
                 style={{"width": "50px", "height": "50px", "objectFit": "cover", "borderRadius": "50%"}} className="me-3"/>
                 <div>
@@ -49,7 +44,7 @@ const PostItem = ({tuit}) => {
                                 <span className="wd-handler"> {tuit.user.handler} {tuit.user.lastactive !== "" ? "• " + tuit.user.lastactive : ""}</span>
                             </p>
                             <button style={{"backgroundColor": "transparent", "border": "1px solid transparent"}}
-                                    onClick={() => xClickHandler(tuit)}
+                                    onClick={() => deleteTuit(dispatch, tuit)}
                             >
                                 <i className="fa-solid fa-xmark" style={{"color": "white"}}/>
                             </button>
@@ -59,7 +54,10 @@ const PostItem = ({tuit}) => {
                         </div>
                     </div>
                     
-                    <div className="card" style={{"backgroundColor": "transparent", "border": "1px solid transparent"}}>
+                    <div className="card"
+                         style={{
+                             "backgroundColor": `${content !== "" ? "" : "transparent"}`,
+                             "border": `${content !== "" ? "" : "1px solid transparent"}`}}>
                         {media}
                         <div className="card-body" style={{"display": `${tuit.post.content[1]}`}}>
                             <h5 className="card-title wd-title">{tuit.post.title}</h5>

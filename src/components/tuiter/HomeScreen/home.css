@@ -1,6 +1,8 @@
 body {
     font-family: "Helvetica Neue", sans-serif;
+
 }
+
 
 .wd-post-list li, .card, .card-body {
     background-color: rgb(6,6,6);
@@ -53,12 +55,15 @@ span.wd-stack {
     font-size: 14px;
     font-weight: bold;
 }
-
 .wd-card-img {
     width: 75px;
     height: 75px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.wd-card-img .round {
+    border-radius: 25px;
 }
 
 .fa-magnifying-glass {
@@ -137,4 +142,5 @@ ul.nav-tabs {
 
 .wd-main {
     border-radius: 25px;
+    background-color: rgb(6,6,6);
 }

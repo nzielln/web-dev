@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 import WhatsHappeningIcons from "./WhatsHappeningIcons";
+import {createTuit} from "../actions/tuits-actions";
 
 const WhatsHappening = () => {
     let [whatHappening, setWhatsHappening] = useState("What's happening?");
@@ -9,21 +10,38 @@ const WhatsHappening = () => {
 
     const whatsHappeningChangeHandler = (event) => {
         const value = event.target.value;
-        setWhatsHappening(value)
-    }
+        setWhatsHappening(value);
+    };
 
     const whatHappeningFocusHandler = () => {
-        setWhatsHappening("")
-    }
+        setWhatsHappening("");
+    };
 
-    const tuitClickHandler = () => {
-        dispatch({
-            type: "create-tuit",
-            tuit: whatHappening
-        });
-
+    const new_tuit = (tuit_blurb) => {
         setWhatsHappening("What's happening?")
-
+        return {
+            _id: (new Date()).getTime() + "",
+            user: {
+                avatar: "alice.jpeg",
+                user: "ReactJS", "handler": "@ReactJS",
+                lastactive: ""
+            },
+            blurb: tuit_blurb,
+            post: {
+                image: "tea.jpeg",
+                video: "",
+                title: "",
+                content: ["", "none"],
+                link: ["", "none"]
+            },
+            stats: {
+                replies: 331,
+                retuits: 24,
+                likes: 52,
+                liked: true
+            },
+            likes: 0
+        };
     };
 
     return (
@@ -51,7 +69,7 @@ const WhatsHappening = () => {
                         <button type="button"
                                 className="btn btn-primary mt-2 col-12"
                                 style={{"borderRadius": "25px", "width": "100px"}}
-                                onClick={tuitClickHandler}>
+                                onClick={() => createTuit(dispatch, new_tuit(whatHappening))}>
                             Tuit
                         </button>
                     </div>

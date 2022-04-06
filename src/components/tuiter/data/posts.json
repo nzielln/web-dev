@@ -1,8 +1,8 @@
 [
     {
-        "_id": "0",
+        "_id": 0,
         "user": {
-            "avatar": "/tuiter/images/react 2.png",
+            "avatar": "react 2.png",
             "user": "ReactJS", "handler": "@ReactJS",
             "lastactive": ""
         },
@@ -20,16 +20,16 @@
             "link": ["", "none"]
         },
         "stats": {
-            "replies": "123",
-            "retuits": "234",
-            "likes":"345",
+            "replies": 123,
+            "retuits": 234,
+            "likes":345,
             "liked": true
         }
     },
     {
-        "_id": "1",
+        "_id": 1,
         "user": {
-            "avatar": "/tuiter/images/node.svg",
+            "avatar": "node.svg",
             "user": "SpaceX", "handler": "@spacex",
             "lastactive": ""
         },
@@ -42,17 +42,17 @@
             "link": ["", "none"]
         },
         "stats": {
-            "replies": "123",
-            "retuits": "234",
-            "likes":"345",
+            "replies": 123,
+            "retuits": 234,
+            "likes":345,
             "liked": false
         }
     },
 
     {
-        "_id": "1",
+        "_id": 2,
         "user": {
-            "avatar": "/tuiter/images/bb.jpeg",
+            "avatar": "bb.jpeg",
             "user": "BB", "handler": "@bbbb",
             "lastactive": ""
         },
@@ -65,40 +65,40 @@
             "link": ["", "none"]
         },
         "stats": {
-            "replies": "123",
-            "retuits": "234",
-            "likes":"345",
+            "replies": 123,
+            "retuits": 234,
+            "likes":345,
             "liked": false
         }
     },
 
     {
-        "_id": "1",
+        "_id": 3,
         "user": {
-            "avatar": "/tuiter/images/stan.jpeg",
+            "avatar": "stan.jpeg",
             "user": "StanLey", "handler": "@stanstan",
             "lastactive": ""
         },
         "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius ultricies rutrum. Aliquam erat volutpat. Quisque ac dictum mauris, vitae varius tortor. Mauris consequat leo elit, lacinia pulvinar magna auctor nec. Morbi purus massa, laoreet eu nulla gravida, lobortis sagittis arcu.",
         "post": {
-            "image": "/tuiter/images/people.jpeg",
+            "image": "people.jpeg",
             "video": "",
             "title": "",
             "content": ["", "none"],
             "link": ["", "none"]
         },
         "stats": {
-            "replies": "123",
-            "retuits": "234",
-            "likes":"345",
+            "replies": 123,
+            "retuits": 234,
+            "likes":345,
             "liked": false
         }
     },
 
     {
-        "_id": "1",
+        "_id": 4,
         "user": {
-            "avatar": "/tuiter/images/person.jpeg",
+            "avatar": "person.jpeg",
             "user": "JustAPerson", "handler": "@person",
             "lastactive": ""
         },
@@ -111,9 +111,9 @@
             "link": ["", "none"]
         },
         "stats": {
-            "replies": "123",
-            "retuits": "234",
-            "likes":"345",
+            "replies": 123,
+            "retuits": 234,
+            "likes":345,
             "liked": true
         }
     }
