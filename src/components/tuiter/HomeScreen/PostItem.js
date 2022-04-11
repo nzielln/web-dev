@@ -22,7 +22,7 @@ const PostItem = ({tuit}) => {
     } else if (img !== "") {
         media = <img src={`/tuiter/images/${tuit.post.image}`} className={`card-img-top ${content === "" ? "round" : ""}`} alt="" />;
 
-    } else if (img === "" && vid === "") {
+    } else if (img === "" && vid.url === "") {
         media = "";
     }
 
