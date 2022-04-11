@@ -10,7 +10,7 @@ const PostItem = ({tuit}) => {
     const vid = tuit.post.video;
     const content = tuit.post.content[0]
 
-    if (vid !== "") {
+    if (vid.url !== "") {
         media = <iframe width={vid.width}
                         height={vid.height}
                         style={{"border": "1px solid transparent", "borderRadius": "25px"}}

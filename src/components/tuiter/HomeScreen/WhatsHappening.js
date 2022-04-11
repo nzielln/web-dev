@@ -20,7 +20,6 @@ const WhatsHappening = () => {
     const new_tuit = (tuit_blurb) => {
         setWhatsHappening("What's happening?")
         return {
-            _id: (new Date()).getTime() + "",
             user: {
                 avatar: "alice.jpeg",
                 user: "ReactJS", "handler": "@ReactJS",
@@ -29,7 +28,12 @@ const WhatsHappening = () => {
             blurb: tuit_blurb,
             post: {
                 image: "tea.jpeg",
-                video: "",
+                video: {
+                    width: "",
+                    height: "",
+                    url: "",
+                    title: ""
+                },
                 title: "",
                 content: ["", "none"],
                 link: ["", "none"]
